@@ -24,25 +24,21 @@
             var lastNameIndex = "";
 
             function pickAFirstName(){
-                var firstNameIndex = firstNames[randomNumber(firstNames.length-1)];
+                var firstNameIndex = firstNames[randomNumber(firstNames.length)];
                 return firstNameIndex;
             }
 
             function pickALastName(){
-                var lastNameIndex = lastNames[randomNumber(lastNames.length-1)];
+                var lastNameIndex = lastNames[randomNumber(lastNames.length)];
                 return lastNameIndex;
             }
 
             function generateName(){
-                var firstNameIndex = firstNames[randomNumber(firstNames.length-1)];
-                var lastNameIndex = lastNames[randomNumber(lastNames.length-1)];
-                return firstNameIndex + " " + lastNameIndex;
-            }
+                firstName = pickAFirstName();
+                lastName = pickALastName();
 
-            /*
-            Add Function from previous class to pop values in array
-            function will remove a value after it is selected
-            */
+                return firstName + ' ' + lastName;
+            }
             
         
         

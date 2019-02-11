@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Name Generator</title>
+        <script type="text/javascript">
+        
+            function randomNumber(maxValue){
+                return Math.floor(Math.random() * maxValue);
+            }
+
+            var firstNames = []
+            firstNames.push("Michael");
+            firstNames.push("Bob");
+            firstNames.push("Danel");
+            firstNames.push("Dave");
+
+            var lastNames = []
+            lastNames.push("Trep");
+            lastNames.push("Daniels");
+            lastNames.push("Adkins");
+            lastNames.push("Laxton");
+            
+            var firstNameIndex = "";
+            var lastNameIndex = "";
+
+            function pickAFirstName(){
+                var firstNameIndex = firstNames[randomNumber(firstNames.length-1)];
+                return firstNameIndex;
+            }
+
+            function pickALastName(){
+                var lastNameIndex = lastNames[randomNumber(lastNames.length-1)];
+                return lastNameIndex;
+            }
+
+            function generateName(){
+                var firstNameIndex = firstNames[randomNumber(firstNames.length-1)];
+                var lastNameIndex = lastNames[randomNumber(lastNames.length-1)];
+                return firstNameIndex + " " + lastNameIndex;
+            }
+
+            /*
+            Add Function from previous class to pop values in array
+            function will remove a value after it is selected
+            */
+            
+        
+        
+        
+        </script>
+    </head>
+    <body>
+        <h2>List of Funtions</h2>
+        <ol>
+            <li>pickAFirstName</li>
+            <li>pickALastName</li>
+            <li>generateName</li>
+        </ol>
+
+
+    </body>
+</html>

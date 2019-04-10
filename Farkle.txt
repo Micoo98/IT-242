@@ -1,0 +1,26 @@
+Die
+----------
+NumberOfDie = 6
+ValueOfDie
+Constructor()
+
+
+Player
+--------------------
+Name
+HeldDie
+Score
+BankedScore
+Constructor(string name, int heldDie)
+
+Rules
+--------------
+Roll()
+
+HoldDie()
+
+BankScore()
+
+HotDie() - all die rolled contribute to a score so you get to roll a second time while keeping the previous score.
+
+Constructor()
